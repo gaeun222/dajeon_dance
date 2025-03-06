@@ -1,8 +1,9 @@
 /* 폰트 */
-* {
-    font-family: 'pretendard';
-    font-weight: 500;
-    letter-spacing: -.5px;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css');
+
+body {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 400;
 }
 
 :root {
@@ -12,32 +13,26 @@
     /* 소제목 글씨 */
     --font-large: clamp(20px, 1.46vw, 36px);
     /* 헤더용 글씨 */
+    --font-xl: clamp(32px, 1.875vw, 40px);
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
 
 /* 노말라이즈 */
-body,
-h1,
-h2,
-h3,
-li,
-span,
-ul {
+body, h1, h2, h3, li, span, p, ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Pretendard-Regular";
 }
 a {
     color: inherit;
     text-decoration: none;
 }
 
-div,
-h1,
-h2,
-h3,
-p,
-span {
+div, h1, h2, h3, p, span {
     white-space: nowrap;
 }
 
@@ -176,19 +171,11 @@ span {
     transform: none;
 }
 
-/* .swiper-scrollbar::before {
-        display: block;
-        bottom: 100px;
-        width: 400px;
-      }
-       */
-
 /* 페이지네이션 커스텀 */
 .swiper-pagination {
     color: #fff;
     position: absolute;
-    /* -830px */
-    left: -650px;
+    left: -830px;
     bottom: 150px;
 }
 
@@ -204,6 +191,18 @@ span {
 .swiper-slide > .txt > p {
     color: #fff;
 }
+
+.swiper-slide > .txt > h1 {
+    font-size: var(--font-xl);
+    font-weight: var(--font-weight-semibold);
+}
+.swiper-slide > .txt > h3 {
+    padding-top: 10px;
+}
+.swiper-slide > .txt > p {
+    padding-top: 32px;
+}
+
 /* ==== main banner 끝 ==== */
 
 /* ==== schedule 시작 ==== */

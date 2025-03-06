@@ -1,245 +1,228 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>대전시립무용단</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대전시립무용단</title>
 
-        <!-- 제이쿼리 불러오기 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 
-        <!-- Link Swiper's CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-        <!-- 프리텐다드 폰트 100~900 -->
-        <link
-            rel="stylesheet"
-            as="style"
-            crossorigin="crossorigin"
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <script src="script.js" defer="defer"></script>
-        <link rel="stylesheet" href="styles.css/1920.css">
+    <!-- 파일연결 -->
+    <script src="script.js" defer="defer"></script>
+    <link rel="stylesheet" href="styles.css/1920.css"/>
+    <link rel="stylesheet" href="styles.css/1200-750.css">
+    <link rel="stylesheet" href="styles.css/750-360.css">
+  </head>
 
-    </head>
+  <body>
+    <!-- === top-bar 시작 ==== -->
+    <header>
+      <div class="top-bar-box r">
+        <div class="top-bar-left g">
+          <div><img src="/images/logo.png" alt="" /></div>
+        </div>
 
-    <body>
-        <!-- === top-bar 시작 ==== -->
-        <header>
-            <div class="top-bar-box r">
-                <div class="top-bar-left g">
-                    <div><img src="/images/logo.png" alt=""></div>
-                </div>
+        <div class="top-bar-right g">
+          <ul>
+            <li>
+              <a href="#">대전시립무용단</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">무용단 소개</a>
+                </li>
+                <li>
+                  <a href="#">예술감독</a>
+                </li>
+                <li>
+                  <a href="#">단원소개</a>
+                </li>
+                <li>
+                  <a href="#">사무국</a>
+                </li>
+                <li>
+                  <a href="#">연혁</a>
+                </li>
+                <li>
+                  <a href="#">찾아오시는 길</a>
+                </li>
+              </ul>
+            </li>
 
-                <div class="top-bar-right g">
-                    <ul>
-                        <li>
+            <li>
+              <a href="#">공연</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">공연일정</a>
+                </li>
+                <li>
+                  <a href="#">스케줄</a>
+                </li>
+                <li>
+                  <a href="#">티켓 가이드</a>
+                </li>
+              </ul>
+            </li>
 
-                            <a href="#">대전시립무용단</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">무용단 소개</a>
-                                </li>
-                                <li>
-                                    <a href="#">예술감독</a>
-                                </li>
-                                <li>
-                                    <a href="#">단원소개</a>
-                                </li>
-                                <li>
-                                    <a href="#">사무국</a>
-                                </li>
-                                <li>
-                                    <a href="#">연혁</a>
-                                </li>
-                                <li>
-                                    <a href="#">찾아오시는 길</a>
-                                </li>
-                            </ul>
-                        </li>
+            <li>
+              <a href="#">소식</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">공연자료</a>
+                </li>
+                <li>
+                  <a href="#">언론보도</a>
+                </li>
+                <li>
+                  <a href="#">시즌 브로슈어</a>
+                </li>
+              </ul>
+            </li>
 
-                        <li>
-                            <a href="#">공연</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">공연일정</a>
-                                </li>
-                                <li>
-                                    <a href="#">스케줄</a>
-                                </li>
-                                <li>
-                                    <a href="#">티켓 가이드</a>
-                                </li>
-                            </ul>
-                        </li>
+            <li>
+              <a href="#">참여</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">공연후기</a>
+                </li>
+              </ul>
+            </li>
 
-                        <li>
-                            <a href="#">소식</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">공지사항</a>
-                                </li>
-                                <li>
-                                    <a href="#">공연자료</a>
-                                </li>
-                                <li>
-                                    <a href="#">언론보도</a>
-                                </li>
-                                <li>
-                                    <a href="#">시즌 브로슈어</a>
-                                </li>
-                            </ul>
-                        </li>
+            <li>
+              <a href="#">멤버쉽</a>
+              <ul class="sub-menu o">
+                <li>
+                  <a href="#">유료멤버쉽</a>
+                </li>
+                <li>
+                  <a href="#">후원회 나빌레라</a>
+                </li>
+              </ul>
+            </li>
 
-                        <li>
-                            <a href="#">참여</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">공연후기</a>
-                                </li>
-                            </ul>
-                        </li>
+            <li>
+              <a href="#">
+                <p>ENG</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- === top-bar 끝 ==== -->
 
-                        <li>
-                            <a href="#">멤버쉽</a>
-                            <ul class="sub-menu o">
-                                <li>
-                                    <a href="#">유료멤버쉽</a>
-                                </li>
-                                <li>
-                                    <a href="#">후원회 나빌레라</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <p>ENG</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- ==== main banner 시작 ==== -->
+    <section class="main">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="txt">
+              <h1>라벨 볼레로 & 스트라빈스키 봄의 제전</h1>
+              <h3>부제: 원(circle) & 원(circle)</h3>
+              <p>
+                대전시립무용단 제 76회 정기공연 '볼레로 & 봄의제전'은 한국적
+                춤의 미학을 기반에
+                <br />두고 현재에도 무대 위에서 춤추며 살아가는 예술가로서
+                영원한 고전 두 편을 어떻게 <br />재해석하여 새로운 동시대적
+                의미를 부여할 것인가에 대한 깊은 고민의 결과이다.
+              </p>
             </div>
-        </header>
-        <!-- === top-bar 끝 ==== -->
-
-        <!-- ==== main banner 시작 ==== -->
-        <section class="main">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="txt">
-                            <h1>라벨 볼레로 & 스트라빈스키 봄의 제전</h1>
-                            <h3>부제: 원(circle) & 원(circle)
-                            </h3>
-                            <p>대전시립무용단 제 76회 정기공연 '볼레로 & 봄의제전'은 한국적 춤의 미학을 기반에
-                                <br>두고 현재에도 무대 위에서 춤추며 살아가는 예술가로서 영원한 고전 두 편을 어떻게
-                                <br>재해석하여 새로운 동시대적 의미를 부여할 것인가에 대한 깊은 고민의 결과이다.
-                            </p>
-                        </div>
-                        <div class="gra"></div>
-                        <img src="/images/banner_1.jpg" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="txt">
-                            <h1>천년의 춤 대전</h1>
-                            <p>천년의 전통과 정서를 녹여내고 새천년을 향해 웅비하는 기상을 펼칠 아름다운 무대,
-                                <br>과거의 향수를 불러일으키는 옛 고향의 정취와 마당 춤 정서,
-                                <br>
-                                탁월한 예술적 기지를 유감없이 토해내는 신명의 춤판이다.
-                            </p>
-                        </div>
-                        <div class="gra"></div>
-                        <img src="/images/banner_2.jpg" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="txt">
-                            <h1>천년지무</h1>
-                            <p>[천년지무]는 천년의 전통과 정서를 녹여내 새천년을 향해 웅비하는
-                                <br>기상을 펼칠 아름다운 무대이자 신명의 춤판이다.
-                                <br>전통에 뿌리를 두되, 더 큰 세상으로 나아갈 수 있다는 메세지를 담아
-                                <br>새로운 가무악의 경지를 보여줄 것이다.
-                            </p>
-                        </div>
-                        <div class="gra"></div>
-                        <img src="/images/banner_3.jpg" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="txt">
-                            <h1>음으로 그리는 군상</h1>
-                            <h3>전통춤으로 엮어내는 군상, 신전통 창작춤을 선보이다.
-                            </h3>
-                            <p>정서적으로 공감되는 한국 전통 창작춤의 다양성을 바탕으로
-                                <br>지금의 어려움을 이겨내는 군상들을 보여드립니다. 명인들에 의해 재창조되고 현대화된
-                                <br>신전통 춤들을 통해 한국인의 정서가 공감되는 춤의 무대로 초대합니다.
-                            </p>
-                        </div>
-                        <div class="gra"></div>
-                        <img src="/images/banner_4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <!-- ==== main banner 끝 ==== -->
-
-        <!-- ==== schedule 시작 ==== -->
-        <section class="schedule">
-          <div class="left-box">
-
+            <div class="gra"></div>
+            <img src="images/banner_1.jpg" alt="" />
           </div>
 
-          <div class="right-box">
-
+          <div class="swiper-slide">
+            <div class="txt">
+              <h1>천년의 춤 대전</h1>
+              <p>
+                천년의 전통과 정서를 녹여내고 새천년을 향해 웅비하는 기상을 펼칠
+                아름다운 무대,
+                <br />과거의 향수를 불러일으키는 옛 고향의 정취와 마당 춤 정서,
+                <br />
+                탁월한 예술적 기지를 유감없이 토해내는 신명의 춤판이다.
+              </p>
+            </div>
+            <div class="gra"></div>
+            <img src="/images/banner_2.jpg" alt="" />
           </div>
-        </section>
-        <!-- ==== schedule 끝끝 ==== -->
 
+          <div class="swiper-slide">
+            <div class="txt">
+              <h1>천년지무</h1>
+              <p>
+                [천년지무]는 천년의 전통과 정서를 녹여내 새천년을 향해 웅비하는
+                <br />기상을 펼칠 아름다운 무대이자 신명의 춤판이다.
+                <br />전통에 뿌리를 두되, 더 큰 세상으로 나아갈 수 있다는
+                메세지를 담아 <br />새로운 가무악의 경지를 보여줄 것이다.
+              </p>
+            </div>
+            <div class="gra"></div>
+            <img src="/images/banner_3.jpg" alt="" />
+          </div>
 
-        <!-- ==== ticket 시작 ==== -->
-<section class="ticket">
+          <div class="swiper-slide">
+            <div class="txt">
+              <h1>음으로 그리는 군상</h1>
+              <h3>전통춤으로 엮어내는 군상, 신전통 창작춤을 선보이다.</h3>
+              <p>
+                정서적으로 공감되는 한국 전통 창작춤의 다양성을 바탕으로
+                <br />지금의 어려움을 이겨내는 군상들을 보여드립니다. 명인들에
+                의해 재창조되고 현대화된 <br />신전통 춤들을 통해 한국인의
+                정서가 공감되는 춤의 무대로 초대합니다.
+              </p>
+            </div>
+            <div class="gra"></div>
+            <img src="/images/banner_4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- ==== main banner 끝 ==== -->
 
-</section>
-<!-- ==== ticket 끝끝 ==== -->
+    <!-- ==== schedule 시작 ==== -->
+    <section class="schedule">
+      <div class="left-box"></div>
 
+      <div class="right-box"></div>
+    </section>
+    <!-- ==== schedule 끝끝 ==== -->
 
-<!-- ==== director 시작 ==== -->
-<section class="director">
+    <!-- ==== ticket 시작 ==== -->
+    <section class="ticket"></section>
+    <!-- ==== ticket 끝끝 ==== -->
 
-</section>
-<!-- ==== director 끝끝 ==== -->
+    <!-- ==== director 시작 ==== -->
+    <section class="director"></section>
+    <!-- ==== director 끝끝 ==== -->
 
+    <!-- ==== abuot 시작 ==== -->
+    <section class="about"></section>
+    <!-- ==== about 끝끝 ==== -->
 
-<!-- ==== abuot 시작 ==== -->
-<section class="about">
-  
-</section>
-<!-- ==== about 끝끝 ==== -->
+    <!-- ==== member 시작 ==== -->
+    <section class="member"></section>
+    <!-- ==== member 끝끝 ==== -->
 
-
-<!-- ==== member 시작 ==== -->
-<section class="member">
-  
-</section>
-<!-- ==== member 끝끝 ==== -->
-
-
-<!-- ==== notice 시작 ==== -->
-<section class="notice">
-  
-</section>
-<!-- ==== notice 끝끝 ==== -->
-
-    </body>
-
+    <!-- ==== notice 시작 ==== -->
+    <section class="notice"></section>
+    <!-- ==== notice 끝끝 ==== -->
+  </body>
 </html>

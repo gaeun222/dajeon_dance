@@ -1,0 +1,48 @@
+/* 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css');
+
+body {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --font-small: clamp(12px, 0.73vw, 16px);
+    /* 본문 글씨 */
+    --font-medium: clamp(14px, 0.94vw, 22px);
+    /* 소제목 글씨 */
+    --font-large: clamp(20px, 1.46vw, 36px);
+    /* 헤더용 글씨 */
+}
+
+/* 노말라이즈 */
+body, h1, h2, h3, li, span, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div, h1, h2, h3, p, span {
+    white-space: nowrap;
+}
+
+/* 라이브러리 */
+.r {
+    border: 1px solid red;
+}
+.g {
+    border: 1px solid green;
+}
+.b {
+    border: 1px solid blue;
+}
+.o {
+    border: 1px solid orange;
+}
+.p {
+    border: 1px solid purple;
+}
