@@ -19,6 +19,13 @@ body {
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+
+    --color-111: #111;
+    --border-c1: #C1C1C1;
+    --color-red: #9D1F26;
+    --txt-red: #8D262B;
+    --bg-f3: #f3f3f3;
+    --txt-bg-red: #F9ECEC;
 }
 
 /* 노말라이즈 */
@@ -205,6 +212,24 @@ div, h1, h2, h3, p, span {
 
 
 /* ==== ticket 시작 ==== */
+.ticket {
+
+}
+
+.ticket > .bg-box {
+    position: relative;
+}
+
+.ticket > .bg-box > img {
+    width: 100%;
+    height: 916px;
+}
+
+.ticket h1 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
 
 
 /* ==== director 시작 ==== */
@@ -434,7 +459,6 @@ div, h1, h2, h3, p, span {
   /* 눌렸을때 */
   .tab__item.active {
     font-size: var(--font-large);
-    font-weight: var(--font-weight-bold);
     color: #111;
   }
 
@@ -466,10 +490,67 @@ div, h1, h2, h3, p, span {
     font-weight: var(--font-weight-semibold);
   }
 
-  /* 탭 내용 active (왜 안되는거임 오 된다) */
+  /* 탭 내용 active*/
 .tab-box > .tab__content-wrapper > .tab__content {
     display: none;
   }
   .tab-box >  .tab__content-wrapper > .tab__content.active {
     display: block;
+  }
+
+  /* ==== footer 시작 ==== */
+  footer {
+    position: relative;
+  }
+
+  footer > div {
+    position: absolute;
+    left: 100px;
+    top: -30px;
+    font-size: var(--font-small);
+    color: #C1C1C1;
+  }
+
+  /* other */
+  .other {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 27px 100px;
+    justify-content: space-between;
+  }
+
+  .other > h1 {
+    font-size: var(--font-large);
+  }
+
+  .other > p {
+    font-size: var(--font-medium);
+  }
+
+  /* end */
+
+  .end {
+    background-color: #DEDEDE;
+    text-align: center;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .end > .bigger {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: var(--font-medium);
+    color: #555;
+    font-weight: var(--font-weight-semibold);
+    padding: 30px 0;
+  }
+  .end > .smaller {
+    font-size: var(--font-small);
+    color: #868686;
+    font-weight: var(--font-weight-regular);
   }
