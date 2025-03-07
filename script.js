@@ -15,7 +15,15 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // 티켓 스와이퍼
-
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // aos 호출
 AOS.init();
