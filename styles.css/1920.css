@@ -120,12 +120,10 @@ div, h1, h2, h3, p, span {
 
 /* ==== main banner ==== */
 .main {
-    width: 100%;
     height: 100%;
 }
 
 .swiper {
-    width: 100%;
     height: 100%;
     position: relative;
 }
@@ -202,8 +200,6 @@ div, h1, h2, h3, p, span {
 .swiper-slide > .txt > p {
     padding-top: 32px;
 }
-/* ==== main banner 끝 ==== */
-
 
 /* ==== schedule 시작 ==== */
 
@@ -266,6 +262,7 @@ div, h1, h2, h3, p, span {
 
 .about > h1 {
     font-size: var(--font-xl);
+    margin-bottom: -50px;
 }
 .about-box {
     display: flex;
@@ -279,6 +276,8 @@ div, h1, h2, h3, p, span {
     height: 795px;
     border-radius: 220px 0 0 220px;
     margin-left: 55px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
 }
 
 .about .about-txt > span {
@@ -306,7 +305,6 @@ div, h1, h2, h3, p, span {
     padding-top: 130px;
 }
 .mem-box {
-    width: 100%;
     height: 297px;
     background-color: #9D1F26;
     display: flex;
@@ -322,7 +320,8 @@ div, h1, h2, h3, p, span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 150px;
   }
   
   .mem-box > .tit > h1 {
@@ -403,4 +402,74 @@ div, h1, h2, h3, p, span {
   th:last-child,
   td:last-child {
     border-right: none;
+  }
+
+
+  /* ==== notice 시작 ==== */
+  .notice {
+    padding: 100px 115px 140px 100px;
+    background-color: #f3f3f3;
+  }
+
+  .notice > .tit > h1 {
+    font-size: var(--font-xl);
+  }
+
+  .tab-box {
+    display:  flex;
+    margin-top: 75px;
+    justify-content: space-between;
+  }
+
+  .tab {
+    align-items: center;
+  }
+  /* 안눌렸을떄 */
+  .tab__item {
+    font-size: var(--font-large);
+    font-weight: var(--font-weight-medium);
+    color: #999;
+    margin-bottom: 40px;
+  }
+  /* 눌렸을때 */
+  .tab__item.active {
+    font-size: var(--font-large);
+    font-weight: var(--font-weight-bold);
+    color: #111;
+  }
+
+  /* 탭 내용 */
+  .tab__content-wrapper > .tab__content > .list-box.first {
+    display: flex;
+    border-top: 2px solid #111;
+    width: 1470px;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box.last {
+    border-bottom: 2px solid #C1C1C1;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box {
+    display: flex;
+    border-top: 2px solid #C1C1C1;
+    width: 1470px;
+    align-items: center;
+  }
+
+  .list-box > .date-box {
+    padding: 20px 65px;
+    text-align: center;
+  }
+
+  .list-box > .date-box > .date {
+    font-size: var(--font-large);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  /* 탭 내용 active (왜 안되는거임 오 된다) */
+.tab-box > .tab__content-wrapper > .tab__content {
+    display: none;
+  }
+  .tab-box >  .tab__content-wrapper > .tab__content.active {
+    display: block;
   }
