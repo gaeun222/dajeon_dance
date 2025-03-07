@@ -1,286 +1,324 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>대전시립무용단</title>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>대전시립무용단</title>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- 제이쿼리 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- 제이쿼리 불러오기 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- 파일연결 -->
-    <script src="script.js" defer="defer"></script>
-    <link rel="stylesheet" href="styles.css/1920.css"/>
-    <link rel="stylesheet" href="styles.css/1200-750.css">
-    <link rel="stylesheet" href="styles.css/750-360.css">
-  </head>
+        <!-- AOS 연결 -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <body>
-    <!-- === top-bar 시작 ==== -->
-    <header>
-      <div class="top-bar-box r">
-        <div class="top-bar-left g">
-          <div><img src="/images/logo.png" alt="" /></div>
-        </div>
+        <!-- 파일연결 -->
+        <script src="script.js" defer="defer"></script>
+        <link rel="stylesheet" href="styles.css/1920.css"/>
+        <link rel="stylesheet" href="styles.css/1200-750.css">
+        <link rel="stylesheet" href="styles.css/750-360.css">
+    </head>
 
-        <div class="top-bar-right g">
-          <ul>
-            <li>
-              <a href="#">대전시립무용단</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">무용단 소개</a>
-                </li>
-                <li>
-                  <a href="#">예술감독</a>
-                </li>
-                <li>
-                  <a href="#">단원소개</a>
-                </li>
-                <li>
-                  <a href="#">사무국</a>
-                </li>
-                <li>
-                  <a href="#">연혁</a>
-                </li>
-                <li>
-                  <a href="#">찾아오시는 길</a>
-                </li>
-              </ul>
-            </li>
+    <body>
+        <!-- === top-bar 시작 ==== -->
+        <header>
+            <div class="top-bar-box r">
+                <div class="top-bar-left g">
+                    <div><img src="/images/logo.png" alt=""/></div>
+                </div>
 
-            <li>
-              <a href="#">공연</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">공연일정</a>
-                </li>
-                <li>
-                  <a href="#">스케줄</a>
-                </li>
-                <li>
-                  <a href="#">티켓 가이드</a>
-                </li>
-              </ul>
-            </li>
+                <div class="top-bar-right g">
+                    <ul>
+                        <li>
+                            <a href="#">대전시립무용단</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">무용단 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">예술감독</a>
+                                </li>
+                                <li>
+                                    <a href="#">단원소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">사무국</a>
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <li>
-              <a href="#">소식</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">공지사항</a>
-                </li>
-                <li>
-                  <a href="#">공연자료</a>
-                </li>
-                <li>
-                  <a href="#">언론보도</a>
-                </li>
-                <li>
-                  <a href="#">시즌 브로슈어</a>
-                </li>
-              </ul>
-            </li>
+                        <li>
+                            <a href="#">공연</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">공연일정</a>
+                                </li>
+                                <li>
+                                    <a href="#">스케줄</a>
+                                </li>
+                                <li>
+                                    <a href="#">티켓 가이드</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <li>
-              <a href="#">참여</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">공연후기</a>
-                </li>
-              </ul>
-            </li>
+                        <li>
+                            <a href="#">소식</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">공연자료</a>
+                                </li>
+                                <li>
+                                    <a href="#">언론보도</a>
+                                </li>
+                                <li>
+                                    <a href="#">시즌 브로슈어</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <li>
-              <a href="#">멤버쉽</a>
-              <ul class="sub-menu o">
-                <li>
-                  <a href="#">유료멤버쉽</a>
-                </li>
-                <li>
-                  <a href="#">후원회 나빌레라</a>
-                </li>
-              </ul>
-            </li>
+                        <li>
+                            <a href="#">참여</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">공연후기</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <li>
-              <a href="#">
-                <p>ENG</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- === top-bar 끝 ==== -->
+                        <li>
+                            <a href="#">멤버쉽</a>
+                            <ul class="sub-menu o">
+                                <li>
+                                    <a href="#">유료멤버쉽</a>
+                                </li>
+                                <li>
+                                    <a href="#">후원회 나빌레라</a>
+                                </li>
+                            </ul>
+                        </li>
 
-    <!-- ==== main banner 시작 ==== -->
-    <section class="main">
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="txt">
-              <h1>라벨 볼레로 & 스트라빈스키 봄의 제전</h1>
-              <h3>부제: 원(circle) & 원(circle)</h3>
-              <p>
-                대전시립무용단 제 76회 정기공연 '볼레로 & 봄의제전'은 한국적
-                춤의 미학을 기반에
-                <br />두고 현재에도 무대 위에서 춤추며 살아가는 예술가로서
-                영원한 고전 두 편을 어떻게 <br />재해석하여 새로운 동시대적
-                의미를 부여할 것인가에 대한 깊은 고민의 결과이다.
-              </p>
+                        <li>
+                            <a href="#">
+                                <p>ENG</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="gra"></div>
-            <img src="images/banner_1.jpg" alt="" />
-          </div>
+        </header>
+        <!-- === top-bar 끝 ==== -->
 
-          <div class="swiper-slide">
-            <div class="txt">
-              <h1>천년의 춤 대전</h1>
-              <p>
-                천년의 전통과 정서를 녹여내고 새천년을 향해 웅비하는 기상을 펼칠
-                아름다운 무대,
-                <br />과거의 향수를 불러일으키는 옛 고향의 정취와 마당 춤 정서,
-                <br />
-                탁월한 예술적 기지를 유감없이 토해내는 신명의 춤판이다.
-              </p>
+        <!-- ==== main banner 시작 ==== -->
+        <section class="main">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="txt">
+                            <h1>라벨 볼레로 & 스트라빈스키 봄의 제전</h1>
+                            <h3>부제: 원(circle) & 원(circle)</h3>
+                            <p>
+                                대전시립무용단 제 76회 정기공연 '볼레로 & 봄의제전'은 한국적 춤의 미학을 기반에
+                                <br/>두고 현재에도 무대 위에서 춤추며 살아가는 예술가로서 영원한 고전 두 편을 어떻게
+                                <br/>재해석하여 새로운 동시대적 의미를 부여할 것인가에 대한 깊은 고민의 결과이다.
+                            </p>
+                        </div>
+                        <div class="gra"></div>
+                        <img src="images/banner_1.jpg" alt=""/>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="txt">
+                            <h1>천년의 춤 대전</h1>
+                            <p>
+                                천년의 전통과 정서를 녹여내고 새천년을 향해 웅비하는 기상을 펼칠 아름다운 무대,
+                                <br/>과거의 향수를 불러일으키는 옛 고향의 정취와 마당 춤 정서,
+                                <br/>
+                                탁월한 예술적 기지를 유감없이 토해내는 신명의 춤판이다.
+                            </p>
+                        </div>
+                        <div class="gra"></div>
+                        <img src="/images/banner_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="txt">
+                            <h1>천년지무</h1>
+                            <p>
+                                [천년지무]는 천년의 전통과 정서를 녹여내 새천년을 향해 웅비하는
+                                <br/>기상을 펼칠 아름다운 무대이자 신명의 춤판이다.
+                                <br/>전통에 뿌리를 두되, 더 큰 세상으로 나아갈 수 있다는 메세지를 담아
+                                <br/>새로운 가무악의 경지를 보여줄 것이다.
+                            </p>
+                        </div>
+                        <div class="gra"></div>
+                        <img src="/images/banner_3.jpg" alt=""/>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="txt">
+                            <h1>음으로 그리는 군상</h1>
+                            <h3>전통춤으로 엮어내는 군상, 신전통 창작춤을 선보이다.</h3>
+                            <p>
+                                정서적으로 공감되는 한국 전통 창작춤의 다양성을 바탕으로
+                                <br/>지금의 어려움을 이겨내는 군상들을 보여드립니다. 명인들에 의해 재창조되고 현대화된
+                                <br/>신전통 춤들을 통해 한국인의 정서가 공감되는 춤의 무대로 초대합니다.
+                            </p>
+                        </div>
+                        <div class="gra"></div>
+                        <img src="/images/banner_4.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="gra"></div>
-            <img src="/images/banner_2.jpg" alt="" />
-          </div>
+        </section>
 
-          <div class="swiper-slide">
-            <div class="txt">
-              <h1>천년지무</h1>
-              <p>
-                [천년지무]는 천년의 전통과 정서를 녹여내 새천년을 향해 웅비하는
-                <br />기상을 펼칠 아름다운 무대이자 신명의 춤판이다.
-                <br />전통에 뿌리를 두되, 더 큰 세상으로 나아갈 수 있다는
-                메세지를 담아 <br />새로운 가무악의 경지를 보여줄 것이다.
-              </p>
+        <!-- ==== schedule 시작 ==== -->
+        <section class="schedule"></section>
+
+        <!-- ==== ticket 시작 ==== -->
+        <section class="ticket"></section>
+
+        <!-- ==== director 시작 ==== -->
+        <section class="director">
+            <div class="direct-photo" data-aos="fade-right" data-aos-duration="2000">
+                <img src="/images/director.jpg" alt="">
             </div>
-            <div class="gra"></div>
-            <img src="/images/banner_3.jpg" alt="" />
-          </div>
-
-          <div class="swiper-slide">
-            <div class="txt">
-              <h1>음으로 그리는 군상</h1>
-              <h3>전통춤으로 엮어내는 군상, 신전통 창작춤을 선보이다.</h3>
-              <p>
-                정서적으로 공감되는 한국 전통 창작춤의 다양성을 바탕으로
-                <br />지금의 어려움을 이겨내는 군상들을 보여드립니다. 명인들에
-                의해 재창조되고 현대화된 <br />신전통 춤들을 통해 한국인의
-                정서가 공감되는 춤의 무대로 초대합니다.
-              </p>
+            <div class="direct-txt" data-aos="fade-up" data-aos-duration="2000">
+                <h2>예술감독 겸 상임안무자</h2>
+                <div>8대 안무자<p>김평호</p>
+                </div>
+                <p class="rtxt">“감성이 충만한 춤으로 역동적이고 완성도 높은 창작 작품,
+                    <br>시대의 영혼이 살아있는 감동의 무대... 예술적 창의력은 위대하다.˝</p>
+                <p>단원으로 출발해 지도위원, 훈련장 등의 역할과 창원, 청주시립무용단 상임 안무자로서 수많은 작품의 안무와 공연으로 다양한 성과를 이뤘다.
+                    <br>또한 중국 동북 사범대학과 경주 대학교에서 교수로서도 교육자의 역량과 김평호류 ‘남도 소고춤’ 브랜드 개발로
+                    <br>한국무용의 교본으로 발전하고 있으며 폭넓은 활동으로 역량을 발휘하고 있다.
+                    <br><br>춤과 춤극, 오페라, 뮤지컬, 연극, 창극, 다양한 축제 등의 안무와 연출로 꾸준히 무대를 확장해 왔으며, 한국 춤의 과거와 현재,
+                    <br>미래의 패러다임 확립과 새로운 비전을 제시하고 치우치지 않는 중용의 리더십으로 기본과 원칙을 바탕으로 예술 목표와 가치를 확고하게 한다.</p>
             </div>
-            <div class="gra"></div>
-            <img src="/images/banner_4.jpg" alt="" />
-          </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ==== schedule 시작 ==== -->
-    <section class="schedule">
-      
-    </section>
-  
+        <!-- ==== abuot 시작 ==== -->
+        <section class="about">
+            <h1>대전시립무용단 소개</h1>
+            <div class="about-box">
+                <div class="youtube-container">
+                    <iframe
+                        width="1015"
+                        height="570"
+                        src="https://www.youtube.com/embed/-FxI-hPWPlw?start=1"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <div class="about-txt-box">
+                    <div class="about-txt">
+                        <span>전통과 현대의 조화 속에서 
+                          <br>한국무용의 정수를 담아내며, 
+                          <br><br>
+                          깊이 있는 춤사위로 문화적 정체성을
+                          <br>전하고 예술의 가치를 미래로 이어가는</span>
+                        <h2>"대전시립무용단"</h2>
+                        <p>1985년 창단된 대전시립무용단은 1990년 말레이시아에서 개최된 아시아 민속축전 
+                          <br>참가를 시작으로 프랑스 디죵축제, 미국, 멕시코, 중국, 일본, 호주, 세르비아, 이탈리아 
+                          <br>등 각종 국제 페스티벌 행사에 한국 대표로 초청받아 우리 문화의 우수성과 예술성을 
+                          <br>유감없이 선보였다.
+                          <br>
+                          <br>2011년에는 한.중 수교 20주년 기념으로 중국의 서안과 항저우에서 한국의 매력적인 
+                          <br>춤사위로 중국 대륙을 감탄시키며 우리 춤 국제 브랜드화를 한 단계 업그레이드시켰고, 
+                          <br>2016년 외교부 주최 스페인 수교 50주년 기념 주요 외교 계기 기념 문화행사에 한국 
+                          <br>대표 무용단으로 선정되어 스페인 지역을 순회하며 문화사절단으로서의 역할을 
+                          <br>성공적으로 수행하였다.
+                          <br>
+                          <br>2018년 평창 동계올림픽 축하공연을 통해 한국 전통춤의 진수를 선보이며 세계인에게 
+                          <br>지역 무용단의 저력을 알리는 계기가 되었다. 대전시립무용단은 39년 동안 쌓아온 
+                          <br>저력을 바탕으로 대전시민과 호흡을 함께 하며, 과학, 문화, 행정, 교통중심도시의 
+                          <br>면모를 더욱 공고히 하고 있다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- ==== ticket 시작 ==== -->
-    <section class="ticket"></section>
- 
+        <!-- ==== member 시작 ==== -->
+        <section class="mem" data-aos="fade-up" data-aos-duration="2000">
+            <div class="mem-box">
+                <div class="tit">
+                    <h1>멤버쉽</h1>
+                    <button>가입하기</button>
+                </div>
 
-    <!-- ==== director 시작 ==== -->
-    <section class="director">
-      <div class="direct-photo">
-        <img src="/images/director.jpg" alt="">
-      </div>
-      <div class="direct-txt">
-        <h2>예술감독 겸 상임안무자</h2>
-        <div>8대 안무자<p>김평호</p></div>
-        <p class="rtxt">“감성이 충만한 춤으로 역동적이고 완성도 높은 창작 작품, 
-          <br>시대의 영혼이 살아있는 감동의 무대... 예술적 창의력은 위대하다.˝</p>
-          <p>단원으로 출발해 지도위원, 훈련장 등의 역할과 창원, 청주시립무용단 상임 안무자로서 수많은 작품의 안무와 공연으로 다양한 성과를 이뤘다. 
-            <br>또한 중국 동북 사범대학과 경주 대학교에서 교수로서도 교육자의 역량과 김평호류 ‘남도 소고춤’ 브랜드 개발로 
-            <br>한국무용의 교본으로 발전하고 있으며 폭넓은 활동으로 역량을 발휘하고 있다.
-            <br><br>춤과 춤극, 오페라, 뮤지컬, 연극, 창극, 다양한 축제 등의 안무와 연출로 꾸준히 무대를 확장해 왔으며, 한국 춤의 과거와 현재, 
-            <br>미래의 패러다임 확립과 새로운 비전을 제시하고 치우치지 않는 중용의 리더십으로 기본과 원칙을 바탕으로 예술 목표와 가치를 확고하게 한다.</p>
-      </div>
-    </section>
-    
+                <div class="mid-box">
+                    <h3>&#9642;&nbsp;대전시립무용단 멤버쉽으로 큰 혜택을 누리세요.</h3>
+                    <p>- 유료멤버쉽에 가입하시면 별도의 티켓 구매 없이 전화 예약 후 시립무용단의
+                        <br>&nbsp;&nbsp;&nbsp;모든 공연을 좋은 자리 감상하실 수 있습니다.</p>
+                    <p>- 동반하시는 분께 30% 할인혜택을 드립니다.</p>
+                    <p>- 연간 브로슈어 제공 및 모든 공연소식 알림을 받으실 수 있습니다.</p>
+                </div>
 
-    <!-- ==== abuot 시작 ==== -->
-    <section class="about"></section>
-    
+                <div class="right-box">
+                    <h3>&#9642;&nbsp;멤버쉽 구분 및 가입비</h3>
 
-    <!-- ==== member 시작 ==== -->
-    <section class="mem">
-      <div class="mem-box">
-        <div class="tit">
-          <h1>멤버쉽</h1>
-          <button>가입하기</button>
-        </div>
-        
-        <div class="mid-box">
-          <h3>&#9642;&nbsp;대전시립무용단 멤버쉽으로 큰 혜택을 누리세요.</h3>
-          <p>- 유료멤버쉽에 가입하시면 별도의 티켓 구매 없이 전화 예약 후 시립무용단의
-         <br>&nbsp;&nbsp;&nbsp;모든 공연을 좋은 자리 감상하실 수 있습니다.</p>
-          <p>-  동반하시는 분께 30% 할인혜택을 드립니다.</p>
-          <p>-  연간 브로슈어 제공 및 모든 공연소식 알림을 받으실 수 있습니다.</p>
-        </div>
-        
-        <div class="right-box">
-          <h3>&#9642;&nbsp;멤버쉽 구분 및 가입비</h3>
-          
-          <table>
-      <tbody>
-        <tr>
-          <td>유형</td>
-          <td>개인회원</td>
-          <td>가족회원</td>
-          <td>단체회원</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>인원</td>
-          <td>1인</td>
-          <td>2인이상</td>
-          <td>5인이상</td>
-        </tr>
-        <tr>
-          <td>금액</td>
-          <td>20,000원</td>
-          <td> <div><p>10%</p>18,000원</div></td>
-          <td><div><p>20%</p>16,000원</div></td>
-        </tr>
-      </tbody>
-    </table>
-          
-        </div>
-        
-      </div>
-    </section>
-    
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>유형</td>
+                                <td>개인회원</td>
+                                <td>가족회원</td>
+                                <td>단체회원</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>인원</td>
+                                <td>1인</td>
+                                <td>2인이상</td>
+                                <td>5인이상</td>
+                            </tr>
+                            <tr>
+                                <td>금액</td>
+                                <td>20,000원</td>
+                                <td>
+                                    <div>
+                                        <p>10%</p>18,000원</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p>20%</p>16,000원</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <!-- ==== notice 시작 ==== -->
-    <section class="notice"></section>
+                </div>
 
-  </body>
+            </div>
+        </section>
+
+        <!-- ==== notice 시작 ==== -->
+        <section class="notice"></section>
+
+    </body>
 </html>

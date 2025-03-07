@@ -1,3 +1,4 @@
+// 배너 스와이퍼
 var swiper = new Swiper(".mySwiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -12,3 +13,9 @@ var swiper = new Swiper(".mySwiper", {
     type: "fraction",
   }
 });
+
+// 티켓 스와이퍼
+
+
+// aos 호출
+AOS.init();
