@@ -14,9 +14,16 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
+// 아코디언 메뉴
+$(".que").click(function() {
+  $(this).next(".anw").stop().slideToggle(300);
+ $(this).toggleClass('on').siblings().removeClass('on');
+ $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
+});
+
 // 티켓 스와이퍼
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2,
+  slidesPerView: 2.5,
   centeredSlides: true,
   spaceBetween: 30,
   navigation: {
