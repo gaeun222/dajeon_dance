@@ -56,7 +56,7 @@ $(".que").click(function() {
 
 // 티켓 스와이퍼
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2.5,
+  slidesPerView: 2,
   centeredSlides: true,
   spaceBetween: 30,
   navigation: {
