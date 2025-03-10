@@ -226,7 +226,6 @@ div, h1, h2, h3, p, span {
   gap: 65px;
 }
 
-/* .sch-box .s-left-box, */
 .sch-box .s-right-box {
   flex-grow: 1;
 }
@@ -235,7 +234,86 @@ div, h1, h2, h3, p, span {
   width: 876px;
 }
 
-/* 아코디언 */
+/* s-left-box 캘린더 */
+.calendar {
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.calendar-header .mark {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.calendar-header .mark p {
+  margin-right: 20px;
+  font-size: var(--font-small);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.yellow { background: #f4b400; }
+.red { background: #db4437; }
+.blue { background: #4285f4; }
+
+.calendar-weekdays {
+  margin-bottom: 15px;
+}
+
+.calendar-weekdays, .calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-weekdays div:first-child {
+  color: red;
+}
+
+.calendar-weekdays div {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  color: #555;
+}
+
+.border {
+  border-bottom: 2px solid #111;
+}
+
+.calendar-days div {
+  height: 60px;
+  border: 1px solid #999;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+}
+
+.calendar-days .event {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30px;
+}
+
+/* s-right-box 아코디언 */
+.sch-box .s-right-box {
+  margin-top: 73px;
+}
 
 .que:first-child{
   border-top: 2px solid black;

@@ -32,12 +32,12 @@
     <body>
         <!-- === top-bar 시작 ==== -->
         <header>
-            <div class="top-bar-box r">
-                <div class="top-bar-left g">
+            <div class="top-bar-box">
+                <div class="top-bar-left">
                     <div><img src="/images/logo.png" alt=""/></div>
                 </div>
 
-                <div class="top-bar-right g">
+                <div class="top-bar-right">
                     <ul>
                         <li>
                             <a href="#">대전시립무용단</a>
@@ -197,9 +197,33 @@
         <!-- ==== schedule 시작 ==== -->
         <section class="schedule">
             <h1>일정 안내</h1>
-            <div class="sch-box r">
-                <div class="s-left-box g"></div>
-                <div class="s-right-box b">
+            <div class="sch-box">
+                <div class="s-left-box">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                          <button class="prev-month">&lt;</button>
+                          <h2 class="month-year">2025 / 02</h2>
+                          <button class="next-month">&gt;</button>
+                          <div class="calendar-legend">
+                            <div class="mark">
+                          <span class="dot yellow"></span> <p>정기공연</p>
+                          <span class="dot red"></span> <p>기획공연</p>
+                          <span class="dot blue"></span> <p>찾아가는공연</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="calendar-weekdays">
+                          <div>SUN</div> <div>MON</div> <div>TUE</div> <div>WEN</div> <div>THU</div> <div>FRI</div> <div>SAT</div>
+                        </div>
+                        <div class="calendar-days">
+                          <!-- 날짜가 JavaScript에서 동적으로 추가됨 -->
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="s-right-box">
                     <div id="Accordion_wrap" class="accordian">
                         <!-- 1 -->
                         <div class="que">

@@ -14,6 +14,39 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
+// 캘린더
+const calendarDays = document.querySelector(".calendar-days");
+
+// 2025년 2월의 날짜 데이터
+const daysInMonth = 28; // 윤년이 아니라 28일까지
+const firstDayIndex = new Date(2025, 1, 1).getDay(); // 2월 1일의 요일
+
+const events = {
+  3: ["red"], 6: ["yellow"], 8: ["yellow", "blue"],
+  11: ["red"], 20: ["yellow", "blue"], 24: ["yellow"], 27: ["red"]
+};
+
+for (let i = 0; i < firstDayIndex; i++) {
+  const emptyCell = document.createElement("div");
+  calendarDays.appendChild(emptyCell);
+}
+
+for (let day = 1; day <= daysInMonth; day++) {
+  const dayCell = document.createElement("div");
+  dayCell.textContent = day;
+
+  if (events[day]) {
+    events[day].forEach(color => {
+      const eventDot = document.createElement("span");
+      eventDot.classList.add("event", color);
+      dayCell.appendChild(eventDot);
+    });
+  }
+
+  calendarDays.appendChild(dayCell);
+}
+
+
 // 아코디언 메뉴
 $(".que").click(function() {
   $(this).next(".anw").stop().slideToggle(300);
