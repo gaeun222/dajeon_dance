@@ -91,12 +91,22 @@ div, h1, h2, h3, p, span {
   align-content: center;
 }
 .top-bar-right > ul > li > a {
+  font-size: clamp(14px, 0.78vw, 16px);
   color: #dfdfdf;
 }
 
 .top-bar-right > ul > li:hover > a {
   text-decoration: underline;
   font-weight: 700;
+}
+
+.top-bar-right > ul > .p-e {
+  display: flex; align-items: center;
+  margin-right: -20px;
+}
+
+.top-bar-right > ul > .p-e img {
+  width: 18px; height: 18px;
 }
 
 /* ----- 2차 메뉴 ----- */
@@ -228,7 +238,7 @@ gap: calc(100vw * (65 / 1920));
 }
 
 .sch-box .s-right-box {
-flex-grow: 1;
+ flex-grow: 1;
 }
 
 .sch-box .s-left-box {
@@ -313,7 +323,12 @@ bottom: calc(100vw * (20 / 1920));
 
 /* s-right-box 아코디언 */
 .sch-box .s-right-box {
-margin-top: calc(100vw * (73 / 1920));
+margin-top: calc(100vw * (25 / 1920));
+}
+
+.sch-box .s-right-box h3 {
+  margin-bottom: calc(100vw * (25 / 1920));
+  margin-left: 15px;
 }
 
 .que:first-child{
@@ -321,6 +336,7 @@ border-top: 2px solid black;
 }
 
 .que{
+width: clamp(430px, calc(100vw * (780 / 1920)), 780px);
 position: relative;
 padding-left: calc(100vw * (25 / 1920));
 cursor: pointer;
@@ -438,7 +454,7 @@ display: block;
 }
 
 .ticket > .bg-box > img {
-  height: calc(100vw * (916 / 1920));
+  height: clamp(605px, calc(100vw * (916 / 1920)), 916px);
 }
 
 .ticket h1 {
@@ -462,15 +478,16 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 100%;
 }
+
 .ticket .swiper-slide .poster {
   padding-right: calc(100vw * (40/ 1920));
 }
 
 .ticket .swiper-slide img {
   display: block;
-  height: calc(100vw * (378 / 1920));
+  height: clamp(300px,calc(100vw * (378 / 1920)), 378px);
   object-fit: cover;
 }
 
@@ -483,6 +500,10 @@ display: block;
   font-size: var(--font-small);
   font-weight: var(--font-medium);
   line-height: 25px;
+}
+
+.ticket .ticket-mb-txt {
+  display: none;
 }
 
 .ticket .ticket-txt > .btn {
@@ -565,7 +586,7 @@ margin-left: calc(100vw * (120/ 1920));
 }
 
 .director > .direct-txt {
-  padding-left: calc(100vw * (75/ 1920));
+  padding-left: clamp(59px, calc(100vw * (75/ 1920)), 75px);
   margin-top: calc(100vw * (100 / 1920));
 }
 
@@ -587,17 +608,17 @@ margin-left: calc(100vw * (120/ 1920));
   font-weight: var(--font-weight-semibold);
 }
 .director > .direct-txt > .rtxt {
-  font-size: 20px;
+  font-size: clamp(14px, calc(100vw * (20px / 1920)), 20px);
   font-weight: var(--font-weight-semibold);
-color: #8D262B;
+  color: #8D262B;
 
 margin-top: calc(100vw * (76 / 1920));
 margin-bottom: calc(100vw * (80/ 1920));
 }
 
-.director > .direct-txt > p:nth-child(2) {
+.director > .direct-txt > p:nth-child(4) {
   font-size: clamp(14px, calc(100vw * (16px / 1920)), 16px);
-  line-height: 20px;
+  line-height: calc(100vw * (20px / 1920));
 }
 
 
@@ -653,7 +674,6 @@ margin-bottom: calc(100vw * (80/ 1920));
 
 .about .about-txt > p {
 font-size: var(--font-small);
-display: block;
 }
 
 /* ==== membership 시작 ==== */

@@ -58,11 +58,23 @@ $(".que").click(function() {
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 2,
   centeredSlides: true,
-  spaceBetween: 30,
+  slidesPerGroupSkip: 0,
+  grabCursor: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      slidesPerGroup: 1
+    },
+    360: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    }
+  },
+  spaceBetween: 50,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  }
+  },
 });
 
 // aos 호출
