@@ -234,15 +234,15 @@ margin-bottom: calc(100vw * (70 / 1920));
 
 .sch-box {
 display: flex;
-gap: calc(100vw * (65 / 1920));
-}
-
-.sch-box .s-right-box {
- flex-grow: 1;
+gap: calc(100vw * (55 / 1920));
 }
 
 .sch-box .s-left-box {
-width: calc(100vw * (876 / 1920));
+  width: calc(100vw * (876 / 1920));
+  }
+
+.sch-box .s-right-box {
+ flex-grow: 1;
 }
 
 /* s-left-box 캘린더 */
@@ -336,7 +336,7 @@ border-top: 2px solid black;
 }
 
 .que{
-width: clamp(430px, calc(100vw * (780 / 1920)), 780px);
+width: clamp(320px, calc(100vw * (780 / 1920)), 780px);
 position: relative;
 padding-left: calc(100vw * (25 / 1920));
 cursor: pointer;

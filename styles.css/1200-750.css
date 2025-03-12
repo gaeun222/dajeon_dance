@@ -1,4 +1,23 @@
 @media (min-width: 750px) and (max-width: 1200px) {
+/* schedule  */
+.calendar {
+  position: relative;
+}
+
+.calendar-legend {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.anw-flex {
+  display: block;
+  }
+
+  .anw-btn {
+    margin-top: 10px;
+    }
+
   /* ticket */
   .ticket .line {
     display: none;
