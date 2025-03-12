@@ -198,6 +198,10 @@
     order: 1;
   }
 
+  .about .about-txt > .p2 {
+    display: none;
+    }
+
   .about {
     position: relative;
     z-index: 10;
@@ -388,4 +392,5 @@
 .other .gr-2 {
   justify-content: space-around;
 }
+
   }

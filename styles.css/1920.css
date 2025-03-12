@@ -43,6 +43,10 @@ div, h1, h2, h3, p, span {
     white-space: nowrap;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* 라이브러리 */
 .r {
     border: 1px solid red;
@@ -613,7 +617,6 @@ margin-left: calc(100vw * (120/ 1920));
   display: flex;
   align-items: center;
   font-size: clamp(24px, 1.46vw, 28px);
-  /* clamp(24px, calc(100vw * (28px / 1920), 28px) */
 }
 
 .director > .direct-txt > div > p {
@@ -625,7 +628,7 @@ margin-left: calc(100vw * (120/ 1920));
   font-size: clamp(14px, calc(100vw * (20px / 1920)), 20px);
   font-weight: var(--font-weight-semibold);
   color: #8D262B;
-
+  line-height: 25px;
 margin-top: calc(100vw * (76 / 1920));
 margin-bottom: calc(100vw * (80/ 1920));
 }
@@ -633,6 +636,7 @@ margin-bottom: calc(100vw * (80/ 1920));
 .director > .direct-txt > p:nth-child(4) {
   font-size: clamp(14px, calc(100vw * (16px / 1920)), 16px);
   line-height: calc(100vw * (20px / 1920));
+  line-height: 25px;
 }
 
 
@@ -671,10 +675,12 @@ margin-bottom: calc(100vw * (80/ 1920));
   padding-right: 0; /* calc(100vw * (80 / 1920)) */
 }
 
-.about .about-txt > span {
+.about .about-txt > span > p{
   font-size: clamp(16px, calc(100vw * (26 / 1920)), 26px);
   line-height: clamp(20px, calc(100vw * (26 / 1920)), 26px);
   color: #8D262B;
+  line-height: 35px;
+  margin-bottom: 20px;
   font-weight: var(--font-weight-medium);
 }
 
@@ -688,6 +694,7 @@ margin-bottom: calc(100vw * (80/ 1920));
 
 .about .about-txt > p {
 font-size: var(--font-small);
+line-height: 20px;
 }
 
 /* ==== membership 시작 ==== */
@@ -867,6 +874,10 @@ td:last-child {
   align-items: center;
 }
 
+.tab__content-wrapper > .tab__content > .list-box > a:hover {
+  font-weight: var(--font-weight-medium);
+}
+
 .list-box > .date-box {
   padding: calc(100vw * (20/ 1920)) calc(100vw * (65 / 1920));
   text-align: center;
@@ -918,6 +929,10 @@ td:last-child {
   justify-content: space-around;
 }
 
+.pc > a:hover {
+  text-decoration: underline;
+}
+
 .other .gr-1,
 .other .gr-2 {
   display: none;
@@ -935,11 +950,11 @@ td:last-child {
   justify-content: center;
 }
 
-.end > .icon-box > img {
+.end > .icon-box  img {
   height: clamp(24px, calc(100vw * (32 / 1920)), 32px);
 }
 
-.end > .icon-box > img:nth-child(2) {
+.end > .icon-box  a:nth-child(2) img {
   margin: 0 calc(100vw * (26/ 1920));;
 }
 

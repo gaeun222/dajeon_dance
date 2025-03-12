@@ -38,6 +38,7 @@
 
   /* about 시작 */
   .about {
+    height: 556px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -50,6 +51,7 @@
   .about-box {
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-top: 25px;
   }
   
   .about .about-txt-box {
