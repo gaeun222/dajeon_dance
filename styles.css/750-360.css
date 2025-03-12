@@ -1,6 +1,10 @@
-@media (min-width: 360px) and (max-width: 749px) {
+@media (min-width: 300px) and (max-width: 749px) {
   .top-bar-right {
     display: none;
+  }
+
+  .top-bar-right-mb {
+    display: block;
   }
 
   /* main-banner start */
@@ -38,7 +42,7 @@
   .schedule > h1 {
     font-size: 18px;
     text-align: center;
-    margin:  20px 0;
+    margin: 20px 0;
   }
 
   .sch-box {
@@ -83,6 +87,11 @@
     width: 100%;
     object-fit: cover;
   }
+  
+  .ticket .swiper-slide {
+    justify-content: center;
+    padding-top: 20px;
+  }
 
   .ticket .swiper-slide .poster {
     padding-right: 20px;
@@ -93,6 +102,19 @@
     height: 162px;
     object-fit: cover;
   }
+  
+  .ticket .swiper-button-next img,
+.ticket .swiper-button-prev img{
+    margin-top: 20px;
+}
+
+/* slide active */
+.ticket .swiper-slide.swiper-slide-active img {
+  display: block;
+  height: 162px;
+  object-fit: cover;
+}
+
 
   .ticket .ticket-txt .tit {
     font-size: 14px;
@@ -176,17 +198,194 @@
     order: 1;
   }
 
-  
-  
+  .about {
+    position: relative;
+    z-index: 10;
+    /* padding-bottom: ; */
+  }
+
   /* membership start */
   .mem {
+    position: absolute;
+    width: 100%;
     padding: 0;
     margin-top: -40px;
-
+    top: 100; left: 0;
+    z-index: 5;
   }
 
   .mem-box {
     height: 568px;
+    flex-direction: column;
+    padding: 0;
+    font-size: 14px;
+    gap: 30px;
+    line-height: 20px;
   }
 
+  .mem-box > .mid-box {
+    margin-bottom: 25px;
+  }
+
+  /* mem tit */
+  .mem-box > .tit {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding: 0;
+    flex-grow: 0;
+  }
+
+  .mem-box > .tit > h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* mem button */
+  .mem-box > .tit > button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+
+  .mem-box > .mid-box {
+    margin-bottom: 0;
+    flex-grow: 0;
+    display: none;
+  }
+
+  .mem-box > .mid-box-mb {
+    display: block;
+  }
+
+  .mem-box h3 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 14px;
+  }
+
+  .mem-box > .mid-box > p {
+    font-weight: 300;
+  }
+
+  /* mem 표 */
+  .mem-box > .right-box {
+    flex-grow: 0;
+  }
+  td {
+    padding: 12px 4px;
+  }
+
+  /* -- notice start -- */
+  .notice {
+    margin-top: 527px;
+    padding: 50px 25px;
+  }
+  
+  .notice > .tit {
+    margin-bottom: 30px;
+  }
+  .notice > .tit .plus {
+    display: flex;
+    /* 알수 없는 여백 삭제 */
+  }
+  .notice > .tit > h1 {
+    font-size: 20px;
+  }
+
+  .notice > .tit .plus img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .notice .tab-box {
+    display: block;
+  }
+
+  .notice .tab {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .notice .tab .tab__item {
+    font-size: 16px;
+  }
+
+  .tab__item > a > p {
+    display: none;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box.first {
+    padding: 12px;
+    flex-direction: column;
+    width: 95%;
+    align-items: start;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box {
+    padding: 12px;
+    flex-direction: column;
+    width: 95%;
+    align-items: start;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box > a {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 360px; /* 최소 너비 설정 */
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+  }
+
+  .list-box > .date-box {
+    display: none;
+  }
+
+  .list-box > .date-box-mb {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    align-self: end;
+  }
+
+  /* other start */
+  .other {
+    height: 155px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .other .other-tit {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .other .other-tit h1 {
+    font-size: 16px;
+  }
+
+  .other p {
+    font-size: 14px;
+  }
+
+  .pc {
+    display: none;
+  }
+  
+  .other .gr-1,
+.other .gr-2 {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  font-weight: var(--font-weight-regular);
 }
+
+.other .gr-1 {
+  justify-content: space-between;
+}
+.other .gr-2 {
+  justify-content: space-around;
+}
+  }

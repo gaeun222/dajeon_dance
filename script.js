@@ -70,7 +70,7 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerGroup: 1
     }
   },
-  spaceBetween: 50,
+  spaceBetween: 0,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

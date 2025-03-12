@@ -23,6 +23,10 @@
     display: none;
   }
 
+  .ticket .swiper-slide {
+    justify-content: center;
+  }
+
 
   /* director */
   .director .direct-txt {

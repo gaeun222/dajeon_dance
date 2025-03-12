@@ -113,9 +113,11 @@ div, h1, h2, h3, p, span {
 .top-bar-right > ul > li:hover > .sub-menu {
   display: flex;
   transition: 0.5s;
+  justify-content: end;
+  padding: 0 100px;
 }
 .top-bar-right > ul > li .sub-menu {
-  width: calc(100vw * (1060 / 1920));
+  width: 100%;
   height: 75px;
   position: absolute;
   right: 0;
@@ -133,6 +135,10 @@ div, h1, h2, h3, p, span {
 .top-bar-right > ul > li > .sub-menu li:hover a {
   font-weight: 600;
   color: #fff;
+}
+
+.top-bar-right-mb {
+  display: none;
 }
 
 /* ==== main banner ==== */
@@ -219,6 +225,7 @@ div, h1, h2, h3, p, span {
 }
 .main .swiper-slide > .txt > p {
   padding-top: calc(100vw * (32 / 1920));
+  line-height: 26px;
 }
 
 /* ==== schedule 시작 ==== */
@@ -460,7 +467,7 @@ display: block;
 .ticket h1 {
   color: #fff;
   position: absolute;
-  top: clamp(50px,calc(100vw * (90/ 1920)), 90px );
+  top: clamp(70px,calc(100vw * (130/ 1920)), 130px );
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--font-xl);
@@ -476,9 +483,10 @@ display: block;
 
 .ticket .swiper-slide {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding-top: 50px;
 }
 
 .ticket .swiper-slide .poster {
@@ -493,19 +501,25 @@ display: block;
 
 .ticket .ticket-txt .tit {
   font-size: var(--font-large);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: calc(100vw * (30 / 1920));
 }
 
 .ticket .ticket-txt p {
   font-size: var(--font-small);
   font-weight: var(--font-medium);
-  line-height: 25px;
+  line-height: 23px;
 }
 
-.ticket .ticket-mb-txt {
-  display: none;
+/* slide active */
+.ticket .swiper-slide.swiper-slide-active img {
+  display: block;
+  height: clamp(350px,calc(100vw * (450 / 1920)), 450px);
+  object-fit: cover;
 }
 
+
+/* swiper btn */
 .ticket .ticket-txt > .btn {
   display: flex;
   margin-top: calc(100vw * (40/ 1920));
@@ -533,7 +547,6 @@ display: block;
   width: 0;
   height: calc(100vw * (450/ 1920));
   border-right: 1px dashed #fff;
-  padding-left: calc(100vw * (60 / 1920));
 }
 
 /* .ticket .gra {
@@ -556,6 +569,7 @@ display: block;
 width: calc(100vw * (65 / 1920)); 
 height: calc(100vw * (128 / 1920));
     position: absolute;
+    margin-top: 50px;
   display: flex;
 }
 
@@ -678,11 +692,11 @@ font-size: var(--font-small);
 
 /* ==== membership 시작 ==== */
 .mem {
-  padding-top: calc(100vw * (130 / 1920));
+  margin-top: calc(100vw * (130 / 1920));
+  background-color: #9D1F26;
 }
 .mem-box {
   height: calc(100vw * (297 / 1920));
-  background-color: #9D1F26;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -724,8 +738,12 @@ font-size: var(--font-small);
 
 .mem-box > .mid-box {
   flex-grow: 1;
-
 }
+
+.mem-box > .mid-box-mb {
+  display: none;
+}
+
 
 .mem-box h3 {
   font-weight: 400;
@@ -789,6 +807,17 @@ td:last-child {
   background-color: #f3f3f3;
 }
 
+.notice > .tit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notice > .tit > .plus img {
+  width: 32px;
+  height: 32px;
+}
+
 .notice > .tit > h1 {
   font-size: var(--font-xl);
 }
@@ -803,12 +832,17 @@ td:last-child {
   align-items: center;
 }
 /* 안눌렸을떄 */
+.tab__item > a {
+  display: flex;
+  gap: 8px;
+}
 .tab__item {
   font-size: var(--font-large);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   color: #999;
   margin-bottom: calc(100vw * (40/ 1920));
 }
+
 /* 눌렸을때 */
 .tab__item.active {
   font-size: var(--font-large);
@@ -843,6 +877,10 @@ td:last-child {
   font-weight: var(--font-weight-semibold);
 }
 
+.list-box > .date-box-mb {
+  display: none;
+}
+
 /* 탭 내용 active*/
 .tab-box > .tab__content-wrapper > .tab__content {
   display: none;
@@ -852,17 +890,6 @@ td:last-child {
 }
 
 /* ==== footer 시작 ==== */
-footer {
-  position: relative;
-}
-
-footer > div {
-  position: absolute;
-  left: calc(100vw * (100 / 1920));
-  top: calc(100vw * (-30 / 1920));
-  font-size: var(--font-small);
-  color: #C1C1C1;
-}
 
 /* other */
 .other {
@@ -874,13 +901,28 @@ footer > div {
   justify-content: space-between;
 }
 
-.other > h1 {
+.other h1 {
   font-size: var(--font-large);
 }
 
-.other > p {
+.other div div {
   font-size: var(--font-medium);
+  color: #C1C1C1;
+  margin-top: 8px;
+  font-size: 12px;
 }
+
+.pc {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.other .gr-1,
+.other .gr-2 {
+  display: none;
+}
+
 
 /* end */
 
@@ -905,11 +947,15 @@ footer > div {
   display: flex;
   justify-content: center;
   gap: calc(100vw * (30 / 1920));
+  padding: calc(100vw * (30 / 1920)) 0;
+}
+
+.end > .bigger > a {
   font-size: var(--font-medium);
   color: #555;
   font-weight: var(--font-weight-semibold);
-  padding: calc(100vw * (30 / 1920)) 0;
 }
+
 .end > .smaller {
   font-size: var(--font-small);
   color: #868686;
