@@ -3,13 +3,132 @@
     display: none;
   }
 
+  /* 모바일 탑바, 사이드바 */
   .top-bar-right-mb {
     display: block;
   }
 
+  .top-bar-right-mb .mobile-top-bar__btn > span {
+    cursor: pointer;
+  }
+
+  .top-bar-right-mb .mobile-side-bar {
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    width: 280px;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .3s, opacity.3s;
+  }
+
+  .top-bar-right-mb .mobile-side-bar.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .top-bar-right-mb .mobile-side-bar-actived,
+  .top-bar-right-mb .mobile-side-bar-actived > body {
+    overflow: hidden;
+  }
+
+  .top-bar-right-mb  .mobile-side-bar .mobile-side-bar-box {
+    background-color: #202020; 
+    width: 100%; 
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 40px;
+    margin-left: auto;
+    transform:translateX(100%);
+    transition: transform .3s;
+  }
+
+  .top-bar-right-mb  .mobile-side-bar.active .mobile-side-bar-box {
+    transform:translateX(0);
+  }
+
+  /* 모바일 버전 헤더 시작 */
+  .top-bar-right-mb .mobile-side-bar .mobile-side-bar__head {
+  padding: 0 0 15px 0;
+  display: flex;
+  color: #fff;
+  border-bottom: 2px solid#666666;
+  margin-bottom: 40px;
+}
+
+.top-bar-right-mb .mobile-side-bar .mobile-side-bar__head > ul {
+  display: flex;
+  gap: 12px;
+}
+
+.top-bar-right-mb .mobile-side-bar .mobile-side-bar__head > ul img {
+  width: 18px; height: 18px;
+  object-fit: cover;
+}
+
+.top-bar-right-mb .mobile-side-bar .mobile-side-bar__head > ul a {
+  font-size: 14px;
+}
+.top-bar-right-mb .mobile-side-bar .mobile-side-bar__head > ul a:hover {
+  text-decoration: underline;
+}
+
+/* X버튼 시작 */
+.top-bar-right-mb .mobile-side-bar__btn-close{
+  width: 24px; height: 24px; position: relative; margin-left: auto; cursor: pointer;
+}
+
+.top-bar-right-mb .mobile-side-bar__btn-close::before, .mobile-side-bar__btn-close::after{
+/* content는 기본값이다.   */
+  content: "";  
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 40%; left: 0;
+  transform: rotate(45deg);
+}
+.top-bar-right-mb .mobile-side-bar__btn-close::after {
+  transform: rotate(-45deg);
+}
+/* X버튼 끝 */
+
+.top-bar-right-mb .mobile-side-bar-item {
+  color: #fff;
+}
+
+.top-bar-right-mb .mobile-side-bar-item > li {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 40px;
+}
+
+.top-bar-right-mb .mobile-side-bar-item > li li{
+  margin: 4px 0;
+}
+
+.top-bar-right-mb .mobile-side-bar-item > li li:first-child {
+  margin-top: 10px;
+}
+
+.top-bar-right-mb .mobile-side-bar-item > li li a {
+  font-weight: var(--font-weight-regular);
+  color: #dfdfdf;
+  font-size: 14px;
+}
+
+.top-bar-right-mb .mobile-side-bar-item > li li a:hover {
+  font-weight: var(--font-weight-semibold);
+}
+
+
   /* main-banner start */
   .main .swiper-slide {
-    height: clamp(254px, calc(100vw * (331 / 1920)), 331px);
+    height: clamp(254px, 17.240vw, 331px);
   }
 
   .main .swiper-slide .txt {
@@ -61,7 +180,7 @@
   }
 
   .sch-box .s-left-box .calendar-days div {
-    height: clamp(30px, calc(100vw * (50 / 1920)), 50px);
+    height: clamp(30px, 2.604vw, 50px);
   }
 
   .calendar .calendar-header > .month-year {
@@ -133,7 +252,7 @@
   }
 
   .ticket .ticket-txt > .btn {
-    margin-top: calc(100vw * (100 / 1920));
+    margin-top: 5.208vw;
     gap: 8px;
   }
 
@@ -190,17 +309,23 @@
   .about-box > .youtube-container {
     aspect-ratio: 16 / 9;
   }
-
+  
   .about .about-txt-box {
-    width: 100%;
-    border-radius: 0 0 40px 40px;
-    margin-left: 0;
-    order: 1;
-  }
-
-  .about .about-txt > .p2 {
     display: none;
-    }
+  }
+  
+  .about .about-txt-box-1200 {
+    background-color: #F9ECEC;
+    width: 100%;
+    border-radius: 0 0 40px 0;
+    height: clamp(556px, 41.406vw, 795px);
+    margin-right: 2.865vw;
+    margin-left: 0;
+    display: flex; flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 0;
+  }
 
   .about {
     position: relative;

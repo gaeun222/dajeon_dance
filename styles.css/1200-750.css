@@ -1,4 +1,17 @@
 @media (min-width: 750px) and (max-width: 1200px) {
+/* main-banner */
+.main .swiper-slide .txt h1 {
+  font-size: 26px;
+}
+.main .swiper-slide .txt h3 {
+  font-size: 16px;
+}
+
+.main .swiper-slide .txt p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 /* schedule  */
 .calendar {
   position: relative;
@@ -55,13 +68,51 @@
   }
   
   .about .about-txt-box {
-    border-radius: 0 clamp(150px, calc(100vw * (220/ 1920)), 220px) clamp(150px, calc(100vw * (220/ 1920)), 220px) 0;
+    display: none;
+    /* border-radius: 0 clamp(150px, calc(100vw * (220/ 1920)), 220px) clamp(150px, calc(100vw * (220/ 1920)), 220px) 0;
     margin-right: calc(100vw * (55 / 1920));
-    margin-left: 0;
+    margin-left: 0; */
   }
   
-  .about .about-txt > .p2 {
-  display: none;
+  .about .about-txt-box-1200 {
+    background-color: #F9ECEC;
+   width: clamp(497px, 39.063vw, 750px ); /*497,556*/
+  height: clamp(556px, 41.406vw, 795px);
+  margin-left: 2.865vw;
+  display: flex; flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding-right: 0;
+    border-radius: 0 clamp(150px, 11.458vw, 220px) clamp(150px, 11.458vw, 220px) 0;
+    margin-right: 2.865vw;
+    margin-left: 0;
+  }
+  .mem-box > .tit {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.604vw;
+    padding-right: 2.604vw;
   }
 
+/* notice start */
+  .notice > .tit > h1 {
+    font-size: 24px;
+  }
+
+  .tab-box {
+    gap: 20px;
+  }
+
+  .tab__content-wrapper > .tab__content > .list-box > a {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 450px; /* 최소 너비 설정 */
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+  }
 }

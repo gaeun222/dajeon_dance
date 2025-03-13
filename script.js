@@ -1,3 +1,32 @@
+// 탑바 사이드바
+function MobileTopBar__init() {
+  $('.mobile-top-bar__btn').click(function() {
+    MobileSideBar__show();
+  });
+}
+function MobilesideBar__init() {
+  $('.mobile-side-bar, .mobile-side-bar__btn-close').click(function() {
+    MobileSideBar__hide();
+  });
+  
+  $('.mobile-side-bar-box').click(function(){
+    return false;
+  });
+}
+
+function MobileSideBar__show() {
+  $('.mobile-side-bar').addClass('active');
+  $('html').addClass('mobile-side-bar-actived');
+}
+
+function MobileSideBar__hide() {
+  $('.mobile-side-bar').removeClass('active');
+  $('html').removeClass('mobile-side-bar-actived');
+}
+
+MobileTopBar__init();
+MobilesideBar__init();
+
 // 배너 스와이퍼
 var swiper = new Swiper(".mySwiper", {
   scrollbar: {
