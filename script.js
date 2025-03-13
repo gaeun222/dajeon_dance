@@ -94,7 +94,7 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 2,
       slidesPerGroup: 1
     },
-    360: {
+    300: {
       slidesPerView: 1,
       slidesPerGroup: 1
     }
@@ -107,7 +107,9 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 // aos 호출
-AOS.init();
+AOS.init({
+  once: true, // 한 번만 애니메이션 실행
+});
 
 
 // notice 탭

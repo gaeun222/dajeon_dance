@@ -318,13 +318,19 @@
     background-color: #F9ECEC;
     width: 100%;
     border-radius: 0 0 40px 0;
-    height: clamp(556px, 41.406vw, 795px);
+    height: 450px;
     margin-right: 2.865vw;
     margin-left: 0;
     display: flex; flex-direction: column;
     justify-content: center; 
     align-items: center;
-    padding-right: 0;
+  }
+  .about .about-txt-box-1200 .about-txt {
+    margin: 0 20px;
+  }
+
+  .about .about-txt-box-1200 .about-txt span p {
+    line-height: 20px;
   }
 
   .about {
@@ -350,10 +356,7 @@
     font-size: 14px;
     gap: 30px;
     line-height: 20px;
-  }
-
-  .mem-box > .mid-box {
-    margin-bottom: 25px;
+    margin: 0 20px;
   }
 
   /* mem tit */
@@ -384,6 +387,7 @@
 
   .mem-box > .mid-box-mb {
     display: block;
+    width: 100%;
   }
 
   .mem-box h3 {
@@ -398,7 +402,13 @@
   /* mem 표 */
   .mem-box > .right-box {
     flex-grow: 0;
+    width: 100%;
   }
+
+  .mem-box > .right-box > table {
+    width: 100%;
+  }
+
   td {
     padding: 12px 4px;
   }
@@ -441,29 +451,27 @@
   .tab__item > a > p {
     display: none;
   }
-
+  
   .tab__content-wrapper > .tab__content > .list-box.first {
     padding: 12px;
-    flex-direction: column;
     width: 95%;
-    align-items: start;
+    align-items:end;
+    justify-content: space-between;
   }
 
   .tab__content-wrapper > .tab__content > .list-box {
     padding: 12px;
-    flex-direction: column;
     width: 95%;
     align-items: start;
+    justify-content: space-between;
   }
 
   .tab__content-wrapper > .tab__content > .list-box > a {
     flex-grow: 0;
     flex-shrink: 0;
-    min-width: 360px; /* 최소 너비 설정 */
-  max-width: 300px;
+  max-width: 230px;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 3px;
   }
 
   .list-box > .date-box {
