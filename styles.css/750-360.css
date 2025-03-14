@@ -178,6 +178,14 @@
   .anw-flex {
     width: 100%;
   }
+  
+  .anw-flex {
+    display: block;
+    }
+  
+    .anw-btn {
+      margin-top: 10px;
+      }
 
   .sch-box .s-left-box .calendar-days div {
     height: clamp(30px, 2.604vw, 50px);
@@ -193,6 +201,10 @@
 
   .sch-box .s-right-box .accordian {
     width: 100%;
+  }
+
+  .que > span > .mark-box {
+    margin: 8px 4px 8px 0;
   }
 
   /* ticket start */
@@ -257,9 +269,22 @@
   }
 
   /* director 시작 */
+  .director {
+    height: 200px;
+    padding-bottom: 0;
+  }
+  .director > .direct-photo{
+    width: 144px;
+    height: 175px;
+    padding-right: 20px;
+  }
   .director .direct-photo img {
     width: 144px;
     height: 175px;
+  }
+  .director > .direct-txt {
+    padding-left: 0;
+    margin-top: 0;
   }
 
   .director > .direct-txt > h2 {
@@ -279,13 +304,19 @@
   }
 
   .director > .direct-txt > p {
-    font-size: 12px;
-  }
-
-  .director > .direct-txt > p:nth-child(4) {
     display: none;
   }
 
+  .director-out .rtxt-mb {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  color: #8D262B;
+  line-height: 25px;
+margin-bottom: 4.167vw;
+}
+  
   /* about start */
   .about {
     padding-left: 0;
@@ -510,20 +541,50 @@
   .pc {
     display: none;
   }
-  
-  .other .gr-1,
-.other .gr-2 {
-  width: 100%;
-  display: flex;
-  margin-top: 20px;
-  font-weight: var(--font-weight-regular);
-}
 
-.other .gr-1 {
-  justify-content: space-between;
-}
-.other .gr-2 {
-  justify-content: space-around;
-}
+  /* .other div div {
+    font-size: var(--font-medium);
+    color: #C1C1C1;
+    margin-top: 8px;
+    font-size: 12px;
+  } */
 
+  .other .other-mb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
   }
+
+  .other .other-mb .gr-1 ,
+  .other .other-mb .gr-2,
+  .other .other-mb .gr-3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+  }
+  .other .other-mb .gr-2 {
+    margin-left: 10px;
+  }
+
+  /* end */
+  .end {
+    height: 180px;
+  }
+
+  .end > .bigger {
+    display: flex;
+    justify-content: center;
+    gap: 1.563vw;
+    padding: 15px 0;
+  }
+
+  .end > .smaller {
+    line-height: 18px;
+  }
+
+
+}
