@@ -1,7 +1,6 @@
 @media (min-width: 750px) and (max-width: 1200px) {
-  .top-bar-right > ul > li:hover > .sub-menu {
-    display: flex;
-    padding-left: 35vw;
+  .top-bar-right > ul > li .sub-menu {
+    padding-left: 40%;
   }
   .top-bar-right > ul > li > a {
     font-size: 14px;
