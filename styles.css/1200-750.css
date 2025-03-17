@@ -3,7 +3,11 @@
   .top-bar-right > ul > li > a {
     font-size: 14px;
   }
-  
+  .top-bar-right > ul > li > .sub-menu a {
+    font-size: 14px; 
+  }
+
+
 /* main-banner */
 .main .swiper-slide .txt h1 {
   font-size: 26px;
