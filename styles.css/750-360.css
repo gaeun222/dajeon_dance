@@ -178,6 +178,15 @@
   .anw-flex {
     width: 100%;
   }
+
+  .calendar-header {
+    position: relative;
+  }
+  
+  .calendar-legend {
+    position: absolute;
+    top: 345px;
+  }
   
   .anw-flex {
     display: block;
